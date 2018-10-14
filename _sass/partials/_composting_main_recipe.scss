@@ -1,0 +1,149 @@
+.more-recipes {
+  .rcp1-main {
+    /* border-top: 5px solid $base-gray; //to add after adding slider*/
+    padding-top: 25px;
+    border-bottom: 5px solid $base-gray;
+    padding-bottom: 57px;
+  }
+  .rcp2-main {
+    border-bottom: 5px solid $base-gray;
+    padding-bottom: 57px;
+  }
+  .ingredients-details {
+    margin-top: 0px;
+  }
+  .comp-recp-content {
+    padding-top: 13px;
+  }
+  .highlight-l2 {
+    left: 100px;
+    @include tab-768-991 {
+      left: 85px;
+    }
+    @include desktop-992-1199 {
+      left: 85px;
+    }
+  }
+  .highlight-l3 {
+    left: 162px;
+    @include tab-768-991 {
+      left: 145px;
+      padding: 5px 17px 5px 17px !important;
+    }
+    @include desktop-992-1199 {
+      left: 145px;
+      padding: 5px 17px 5px 17px !important;
+    }
+  }
+  .highlight-l1,
+  .highlight-l2,
+  .highlight-l3 {
+    @include mob-max-767 {
+      left: 0;
+      width: 100%;
+    }
+  }
+}
+
+.imp-aspects-main {
+  .sidebar-title {
+    font-weight: bold;
+    line-height: 1.3;
+    font-size: 40px;
+    font-family: $strong-font;
+    @include desktop-992-1199 {
+      font-size: 38px;
+    }
+    @include tab-768-991 {
+      font-size: 36px;
+    }
+    @include mob-max-767 {
+      font-size: 32px;
+    }
+  }
+  .asp-wrapper {
+    border-bottom: 2px solid $base-gray;
+    margin-bottom: 35px;
+    padding: 0px 0 35px;
+    img {
+      margin: auto;
+      margin-bottom: 20px;
+      max-height: 115px;
+    }
+    .protip {
+      font-style: italic;
+      font-size: 20px;
+      background: $other-highlights;
+      display: inline-block;
+      padding: 0 10px;
+      color: #ffffff;
+      padding-top: 3px;
+      margin: 15px auto;
+    }
+  }
+  .asp1-wrapper {
+    padding-top: 0;
+  }
+  @include tab-min-768 {
+    .sidebar-inner-asp {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 60px;
+    }
+  }
+  @include tab-min-768 {
+    .main-inner {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+    }
+  }
+  .anchor-up {
+    position: relative;
+    border: 2px solid $special;
+    padding-right: 20px;
+    @include transitions;
+    padding-bottom: 3px;
+    font-size: 14px;
+    margin-top: 50px;
+    @include mob-max-767 {
+      margin-top: 15px;
+    }
+    &:hover {
+      border: 2px solid $special;
+      background: $special;
+      color: #ffffff;
+      @include transitions;
+      i {
+        color: #ffffff;
+        @include transitions;
+      }
+    }
+    &:focus,
+    &:active,
+    &:active:focus {
+      opacity: 0.8;
+      background: $special;
+      color: #ffffff;
+      i {
+        color: #ffffff;
+        @include transitions;
+      }
+    }
+    @include tab-max-991 {
+      /* width: 170px;*/
+      /* margin: auto;*/
+    }
+    i {
+      color: $special;
+      @include transitions;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      height: 7px;
+      right: 6px;
+    }
+  }
+}

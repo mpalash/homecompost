@@ -1,0 +1,421 @@
+.for-beginners {
+  .main-info {
+    border-top: 5px solid $base-gray;
+    padding-top: 25px;
+    border-bottom: 5px solid $base-gray;
+    padding-bottom: 57px;
+  }
+  .process {
+    border-bottom: 5px solid $base-gray;
+    padding-bottom: 57px;
+    @include mob-576-767 {
+      img {
+        width: 60%;
+      }
+    }
+    @include mob-480-575 {
+      img {
+        width: 80%;
+      }
+    }
+    @include mob-360-479 {
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .highlight-l2 {
+    left: 283px;
+    @include desktop-992-1199 {
+      left: 240px;
+    }
+    @include tab-768-991 {
+      left: 240px;
+    }
+  }
+  .highlight-l3 {
+    left: 348px;
+    @include desktop-992-1199 {
+      left: 300px;
+    }
+    @include tab-768-991 {
+      left: 298px;
+    }
+  }
+}
+
+.for-beginners,
+.more-recipes {
+  line-height: normal;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .sidebar-title,
+  .process-title,
+  .do-dont-title {
+    font-weight: bold;
+    line-height: 1.3;
+    font-size: 40px;
+    font-family: $strong-font;
+    @include desktop-992-1199 {
+      font-size: 38px;
+    }
+    @include tab-768-991 {
+      font-size: 36px;
+    }
+    @include mob-max-767 {
+      font-size: 32px;
+    }
+  }
+  .do-dont-inner-wrapper {
+    img {
+      max-height: 100px;
+      max-width: 100px;
+      margin: auto;
+    }
+  }
+  .sidebar-desc {
+    margin-top: 80px;
+    font-size: 90%;
+  }
+  .do-dont-title {
+    margin-bottom: 20px;
+  }
+  .ingredients-details {
+    margin-top: 60px;
+  }
+  .ingt-title {
+    font-style: italic;
+    font-size: 20px;
+    background: $other-highlights;
+    display: inline;
+    padding: 0 10px;
+    color: #ffffff;
+    padding-top: 3px;
+  }
+  .ingt-table-wrapper {
+    margin-top: 30px;
+    border-top: 1px solid $base-gray;
+    padding-top: 25px;
+  }
+  .ingt-table {
+    width: 100%;
+    td {
+      vertical-align: top;
+      width: 33.33%;
+      @include mob-max-767 {
+        &:nth-child(2) {
+          width: 0%;
+        }
+      }
+      @include mob-max-767 {
+        width: 50%;
+      }
+      &:nth-child(2) {
+        width: 10%;
+        font-size: 14px;
+      }
+    }
+    .ingt-proportion {
+      font-size: 120%;
+    }
+    .ingt-proportion-material {
+      font-weight: bold;
+    }
+  }
+  .waste-wrapper {
+    border-bottom: 1px solid $base-gray;
+    border-top: 1px solid $base-gray;
+    padding: 20px 0;
+    font-size: 14px;
+  }
+  .prop-desc {
+    border-bottom: 1px solid $base-gray;
+    padding: 0px 0 20px 0;
+    font-size: 14px;
+  }
+  .field--name-field-ingredients {
+    &:before,
+    &:after {
+      content: " ";
+      display: table;
+    }
+  }
+  .highlights {
+    padding: 20px 0;
+  }
+  .highlight-inner-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: self-end;
+    -webkit-align-items: self-end;
+    -ms-flex-align: self-end;
+    align-items: self-end;
+    overflow: hidden;
+    padding-bottom: 15px;
+  }
+  .highlight-l1 {
+    font-size: 20px;
+    @include tab-768-991 {
+      font-size: 17px;
+    }
+    @include desktop-992-1199 {
+      font-size: 17px;
+    }
+  }
+  .highlight-l2 {
+    position: relative;
+    left: 294px;
+    font-size: 38px;
+    font-weight: bold;
+    padding: 0 10px 0 10px !important;
+    @include tab-768-991 {
+      font-size: 34px;
+      left: 247px;
+    }
+    @include desktop-992-1199 {
+      font-size: 34px;
+      left: 247px;
+    }
+  }
+  .highlight-l3 {
+    position: relative;
+    left: 360px;
+    font-size: 20px;
+    padding: 5px 15px 5px 11px !important;
+    @include tab-768-991 {
+      font-size: 17px;
+      left: 307px;
+    }
+    @include desktop-992-1199 {
+      font-size: 17px;
+      left: 307px;
+    }
+  }
+  .highlight-l1,
+  .highlight-l2,
+  .highlight-l3 {
+    background: $other-highlights;
+    padding: 5px 10px 5px 5px;
+    color: #ffffff;
+    font-style: italic;
+    font-family: $strong-font;
+    @include mob-max-767 {
+      left: 0;
+      width: 100%;
+    }
+  }
+  .proportion-table {
+    width: 100%;
+    td {
+      vertical-align: top;
+      padding: 10px 0 7px;
+      width: 33.33%;
+      font-size: 18px;
+      &:first-child {
+        font-weight: bold;
+        padding-left: 35px;
+        font-family: $strong-font;
+      }
+      &:nth-child(2) {
+        width: 10%;
+      }
+      &:last-child {
+        font-size: 16px;
+        line-height: normal;
+        padding-top: 7px;
+        vertical-align: middle;
+      }
+      @include mob-max-767 {
+        &:first-child {
+          padding-left: 15px;
+        }
+        &:nth-child(2) {
+          width: 0%;
+        }
+      }
+      @include mob-max-767 {
+        width: 50%;
+      }
+    }
+    tr {
+      border-bottom: 1px solid $base-gray;
+    }
+  }
+  section {
+    margin-bottom: 50px;
+  }
+  strong {
+    font-family: $strong-font;
+  }
+  .main-body {
+    font-size: 115%;
+  }
+  .process-main-wrapper {
+    padding: 20px;
+    background: $alternative-special;
+    .process-inner-wrapper {
+      background: #ffffff;
+      -webkit-border-radius: 20px;
+      border-radius: 20px;
+      padding: 20px;
+    }
+  }
+  .process-main-title {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: $strong-font;
+    text-align: center;
+    margin-bottom: 20px;
+    @include tab-768-991 {
+      font-size: 18px;
+    }
+    @include mob-max-767 {
+      font-size: 20px;
+    }
+  }
+  @include mob-max-767 {
+    .comp-recp-sidebar {
+      margin-bottom: 25px;
+    }
+    .process-row2 {
+      .proc-s1,
+      .proc-s2,
+      .proc-s3 {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  @include tab-min-768 {
+    .comp-recp-content {
+      padding-top: 7px;
+    }
+    .comp-proc-content {
+      padding-top: 12px;
+    }
+  }
+  .process-desc {
+    margin-top: 20px;
+    border-top: 2px solid $alternative-special;
+    padding-top: 13px;
+    font-size: 14px;
+    margin-bottom: 35px;
+  }
+  .process-row1 {
+    margin-bottom: 35px;
+  }
+  .stepdesc {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+  .do-dont-desc {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 15px;
+  }
+  .ingt-table-wrapper,
+  .waste-wrapper,
+  .highlights,
+  .prop-desc {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /******Sticky sidebars******/
+  @include tab-min-768 {
+    .sidebar-inner-rcp,
+    .sidebar-inner-proc {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 60px;
+    }
+    .main-inner,
+    .process-row1,
+    .imp-aspects-main {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+    }
+  }
+  /******Sticky sidebars end******/
+  @include mob-max-767 {
+    .do-dont-inner-wrapper {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      .col-xs-6 {
+        margin-bottom: 35px;
+      }
+    }
+  }
+  .anchor-up {
+    position: relative;
+    border: 2px solid $special;
+    padding-right: 20px;
+    @include transitions;
+    padding-bottom: 3px;
+    font-size: 14px;
+    margin-top: 50px;
+    @include mob-max-767 {
+      margin-top: 15px;
+    }
+    &:hover {
+      border: 2px solid $special;
+      background: $special;
+      color: #ffffff;
+      @include transitions;
+      i {
+        color: #ffffff;
+        @include transitions;
+      }
+    }
+    &:focus,
+    &:active,
+    &:active:focus {
+      opacity: 0.8;
+      background: $special;
+      color: #ffffff;
+      i {
+        color: #ffffff;
+        @include transitions;
+      }
+    }
+    @include tab-max-991 {
+      /* width: 170px;*/
+      /* margin: auto;*/
+    }
+    i {
+      color: $special;
+      @include transitions;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      height: 7px;
+      right: 6px;
+    }
+  }
+  .jump-anchor {
+    position: relative;
+    top: -95px;
+  }
+  @include mob-max-767 {
+    .process {
+      .anchor-up {
+        margin-left: 15px;
+      }
+    }
+  }
+}

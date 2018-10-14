@@ -1,0 +1,287 @@
+$screen-min-1900: 1900px;
+$screen-min-1600: 1600px;
+$screen-min-1400: 1400px;
+$screen-max-1399: 1399px;
+$screen-min-1200: 1200px;
+$desktop-max-1199: 1199px;
+$desktop-min-992: 992px;
+$tab-max-991: 991px;
+$tab-min-768: 768px;
+$mobile-max-767: 767px;
+$mobile-min-576: 576px;
+$mobile-max-575: 575px;
+$mobile-min-480: 480px;
+$mobile-max-479: 479px;
+$mobile-min-360: 360px;
+$mobile-max-359: 359px;
+$mix-min-tab-desk-768: 768px;
+$mix-max-tab-desk-1199: 1199px;
+
+
+/*----- Min-width 1900px -----*/
+@mixin screen-min-1900 {
+  @media (min-width: #{$screen-min-1900}) {
+    @content;
+  }
+}
+/*----- Min-width 1600px -----*/
+@mixin screen-min-1600 {
+  @media (min-width: #{$screen-min-1600}) {
+    @content;
+  }
+}
+/*----- Min-width 1400px -----*/
+@mixin screen-min-1400 {
+  @media (min-width: #{$screen-min-1400}) {
+    @content;
+  }
+}
+/*----- Max-width 1399px -----*/
+@mixin screen-max-1399 {
+  @media (max-width: #{$screen-max-1399}) {
+    @content;
+  }
+}
+
+/*----- min-width 768px and max-width 1399px -----*/
+@mixin screen-768-1399 {
+  @media (min-width: $tab-min-768) and (max-width: $screen-max-1399) {
+    @content;
+  }
+}
+
+/*----- Min-width 1200px -----*/
+@mixin screen-min-1200 {
+  @media (min-width: #{$screen-min-1200}) {
+    @content;
+  }
+}
+
+/*----- Max-width 1199px -----*/
+@mixin desktop-max-1199 {
+  @media (max-width: #{$desktop-max-1199}) {
+    @content;
+  }
+}
+/*---- min-width 992px and max-width 1199px ----*/
+@mixin desktop-992-1199 {
+  @media (min-width: $desktop-min-992) and (max-width: $desktop-max-1199) {
+    @content;
+  }
+}
+
+/*---- Min-width 992px ----*/
+@mixin desktop-min-992 {
+  @media (min-width: #{$desktop-min-992}) {
+    @content;
+  }
+}
+
+/*---- Max-width 991px ----*/
+@mixin tab-max-991 {
+  @media (max-width: #{$tab-max-991}) {
+    @content;
+  }
+}
+/*---- min-width 768px and max-width 991px ----*/
+@mixin tab-768-991 {
+  @media (min-width: $tab-min-768) and (max-width: $tab-max-991) {
+    @content;
+  }
+}
+
+/*---- min-width 768px and max-width 991px ----*/
+@mixin mix-768-1199 {
+  @media (min-width: $mix-min-tab-desk-768) and (max-width: $mix-max-tab-desk-1199) {
+    @content;
+  }
+}
+
+/*---- Min-width 768px ----*/
+@mixin tab-min-768 {
+  @media (min-width: #{$tab-min-768}) {
+    @content;
+  }
+}
+
+/*---- Max-width 767px ----*/
+@mixin mob-max-767 {
+  @media (max-width: #{$mobile-max-767}) {
+    @content;
+  }
+}
+
+/*---- min-width 576px and max-width 767px ----*/
+@mixin mob-576-767 {
+  @media (min-width: $mobile-min-576) and (max-width: $mobile-max-767) {
+    @content;
+  }
+}
+
+/*---- Min-width 576px ----*/
+@mixin mob-min-576 {
+  @media (min-width: #{$mobile-min-576}) {
+    @content;
+  }
+}
+
+/*---- Max-width 575px ----*/
+@mixin mob-max-575 {
+  @media (max-width: #{$mobile-max-575}) {
+    @content;
+  }
+}
+
+/*---- min-width 480px and max-width 575px ----*/
+@mixin mob-480-575 {
+  @media (min-width: $mobile-min-480) and (max-width: $mobile-max-575) {
+    @content;
+  }
+}
+
+/*---- min-width 480px and max-width 767px ----*/
+@mixin mob-480-767 {
+  @media (min-width: $mobile-min-480) and (max-width: $mobile-max-767) {
+    @content;
+  }
+}
+
+/*---- Min-width 480px ----*/
+@mixin mob-min-480 {
+  @media (min-width: #{$mobile-min-480}) {
+    @content;
+  }
+}
+
+/*---- Max-width 479px ----*/
+@mixin mob-max-479 {
+  @media (max-width: #{$mobile-max-479}) {
+    @content;
+  }
+}
+
+/*---- min-width 360px and max-width 479px ----*/
+@mixin mob-360-479 {
+  @media (min-width: $mobile-min-360) and (max-width: $mobile-max-479) {
+    @content;
+  }
+}
+
+/*---- Max-width 359px ----*/
+@mixin mob-max-359 {
+  @media (max-width: #{$mobile-max-359}) {
+    @content;
+  }
+}
+
+/*===== equalwidth col =====*/
+@mixin calc($property, $expression) {
+  #{$property}: calc(#{$expression});
+  display: inline-block;
+  padding:0 20px;
+}
+
+/*===== Fontawesome Icon =====*/
+@mixin fontawesome-icon($icon, $icon-color) {
+  content: $icon;
+  color: $icon-color;
+}
+
+/*===== Background Image =====*/
+@mixin div-bg($background, $bg-position){
+  background: $background;
+  background-size: cover;
+  background-position: $bg-position;
+  background-repeat: no-repeat;
+}
+
+/*===== Button Styles =====*/
+@mixin btn-large($bradius, $bgcolor) {
+  padding: 25px 50px;
+  border-radius: $bradius;
+  background: $bgcolor;
+}
+@mixin btn-gradient {
+  background: #009c64; /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#009c64),to(#2e65b1));
+  background: linear-gradient(to right, #009c64 0%,#2e65b1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009c64', endColorstr='#2e65b1',GradientType=1 ); /* IE6-9 */
+}
+
+/*===== Text Center =====*/
+@mixin text-center-horizontal {
+  left: 50%;
+  -webkit-transform:translateX(-50%);
+  transform:translateX(-50%);
+}
+@mixin text-center-vertical {
+  top: 50%;
+  -webkit-transform:translateY(-50%);
+  transform:translateY(-50%);
+}
+@mixin text-center-both {
+  left: 50%;
+  top: 50%;
+  -webkit-transform:translate(-50% , -50%);
+  transform:translate(-50% , -50%);
+}
+@mixin element-center-all {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+@mixin element-center-left {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: auto;
+  margin: auto;
+  left: 0; //can override in custom css if required
+}
+@mixin element-center-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: auto;
+  margin: auto;
+  right: 0;//can override in custom css if required
+}
+@mixin element-center-bottom {
+  position: absolute;
+  top: auto;
+  bottom: 0; //can override in custom css if required
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+@mixin element-center-top {
+  position: absolute;
+  top: 0;//can override in custom css if required
+  bottom: auto; 
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+@mixin gl-menu-icons {
+  content: '';
+  width: 100%;
+  height: 20px;
+  display: block;
+  background-repeat: no-repeat;
+  margin-bottom: 15px;
+  background-position: center;
+}
+@mixin transitions {
+  -webkit-transition: all ease-in-out .3s;
+  -o-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+}
+
+@mixin transitionsPlus {
+  -webkit-transition: all ease-in-out 1s;
+  -o-transition: all ease-in-out 1s;
+  transition: all ease-in-out 1s;
+}

@@ -2,11 +2,35 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {% seo %}
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-  {% feed_meta %}
-  {% if jekyll.environment == 'production' and site.google_analytics %}
-    {% include google-analytics.html %}
-  {% endif %}
+
+  <meta name="title" content="{{ page.title }} | {{ site.title }}">
+  <title>{{ page.title }} | {{ site.title }}</title>
+
+  <meta property="og:site_name" content="About Us | 102 Home Compost | Dump it, Spread it, Cover it, Repeat!">
+  <meta name="news_keywords" content="Urban farming, Ecofriendly, Sustainable living, Sustainable future, Organic living, Organic future, Design, Innovation, Future thinking, Designed in India, Made in india, Make in india, Soilmaker, Sustainability, Kitchen, Future, Organic, Organic waste">
+  <meta name="keywords" content="Urban farming, Ecofriendly, Sustainable living, Sustainable future, Organic living, Organic future, Design, Innovation, Future thinking, Designed in India, Made in india, Make in india, Soilmaker, Sustainability, Kitchen, Future, Organic, Organic waste">
+
+  <meta property="og:url" content="https://homecompost.in/about-us">
+  <meta property="og:title" content="About Us">
+  <meta property="og:image" content="https://homecompost.in//sites/default/files/homecompost.png">
+  <meta property="og:image:type" content="image/png">
+  <meta name="MobileOptimized" content="width">
+  <meta name="HandheldFriendly" content="true">
+
+  <link rel="shortcut icon" href="/assets/fav.png" type="image/png">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap/3.3.7/css/bootstrap.css" media="all">
+  <link rel="stylesheet" href="/assets/css/style.css" media="all">
+  <link rel="stylesheet" href="/assets/css/custom.css" media="all">
+
+  <link rel="stylesheet" href="/assets/css/owl.carousel.min.css" media="all">
+  <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css" media="all">
+
   <script src="https://identity-js.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
+
+
+<!--
+<link rel="stylesheet" href="/docroot/themes/contrib/bootstrap/css/3.3.7/overrides.min.css?pglfi2" media="all">
+ -->

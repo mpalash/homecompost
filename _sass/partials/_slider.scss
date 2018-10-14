@@ -1,0 +1,233 @@
+#block-slider {
+  .slider-title {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: $strong-font;
+    @include transitions;
+    text-transform: uppercase;
+    font-style: italic;
+    line-height: 1;
+
+    @include screen-min-1200 {
+      font-size: 38px;
+      position: absolute;
+      top: 30px;
+    }
+
+    @include desktop-max-1199 {
+      font-size: 36px;
+    }
+
+    @include tab-max-991 {
+      font-size: 34px;
+    }
+
+    @include mob-max-767 {
+      font-size: 32px;
+    }
+
+    span {
+      color: $slider-title-highlight;
+    }
+
+  }
+  @include tab-768-991 {
+    .slider-desc2 {
+      margin-top: 5vw;
+    }
+  }
+  .slider-desc {
+    width: 33.33%;
+    font-size: 24px;
+    margin-top: 55px;
+    position: absolute;
+    bottom: auto;
+    top: 70px;
+    text-align: justify;
+    @include tab-768-991 {
+      width: 33.33%;
+      position: absolute;
+      bottom: 120px;
+      text-align: left;
+      font-size: 20px;
+      margin-top: 4vw;
+    }
+    @include mob-max-767 {
+      width: 265px;
+      font-size: 22px;
+      bottom: auto;
+      top: 20px;
+      text-align: left;
+    }
+  }
+
+  .button-wrapper {
+    .ktc-ext-link {
+      @include transitions;
+      position: absolute;
+      right: 60px;
+      bottom: 70px;
+      border: 2px solid $special;
+      font-style: italic;
+      padding: 5px 15px 3px;
+      width: 110px;
+      color: $special;
+      font-size: 16px;
+
+      &:hover {
+        border: 2px solid $special;
+        background: $special;
+        color: #ffffff;
+      }
+
+      @include tab-max-991 {
+        right: 0;
+        left: 0;
+        width: 170px;
+        margin: auto;
+      }
+    }
+  }
+
+  .owl-item {
+
+    @include screen-min-1900 {
+      height: 36.7vw;
+    }
+
+    @include screen-min-1600 {
+      height: 37.5vw;
+    }
+
+    @include screen-min-1400 {
+      height: 37.7vw;
+    }
+    @include screen-min-1200 {
+      height: 37.8vw;
+    }
+    @include desktop-min-992 {
+      height: 38.5vw;
+    }
+    @include tab-768-991 {
+      height: 46.5vw;
+    }
+    @include mob-max-767 {
+      height: 485px;
+    }
+    /* @include tab-768-991 {*/
+    /*   height: 415px;*/
+    /* }*/
+    .item {
+      height: 100%;
+
+      .slider-container {
+        height: 100%;
+        background: #F5F5F5;
+      }
+    }
+    .slider-text {
+      text-shadow: -2px -1px 3px rgba(255, 255, 255, 0.5);
+      top: 100px;
+      margin: auto;
+      left: 0;
+      right: 0;
+      width: 100%;
+      padding: 0 30px;
+      height: 100%;
+      color: $slider-description;
+      @include screen-min-1200 {
+        height: 80%;
+      }
+      @include mob-max-767 {
+        height: 315px;
+        text-align: left;
+        bottom: -120px;
+        .ktc-ext-link {
+          bottom: 0;
+        }
+      }
+    }
+    .slide-image {
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-position: center top;
+      @include tab-min-768 {
+        -webkit-background-size: 80%;
+        background-size: 80%;
+        background-position: center;
+      }
+    }
+
+    .slide-image1 {
+      background-image: url('/sites/default/files/1-family-shot.png');
+      @include screen-min-1900 {
+        background-position: right 8vw;
+      }
+      @include desktop-min-992 {
+        -webkit-background-size: 60%;
+        background-size: 60%;
+        background-position: right 85px;
+      }
+      @include tab-768-991 {
+        -webkit-background-size: 65%;
+        background-size: 65%;
+        background-position: right 90px;
+      }
+      @include mob-max-767 {
+        -webkit-background-size: contain;
+        background-size: contain;
+        background-position: top center;
+      }
+    }
+
+
+    .slide-image2 {
+      background-image: url('/sites/default/files/hand-top-shot.png');
+      @include screen-min-1900 {
+        background-position: right 4vw;
+      }
+      @include desktop-min-992 {
+        -webkit-background-size: 70%;
+        background-size: 70%;
+        background-position: right 3.6vw;
+      }
+      @include tab-768-991 {
+        -webkit-background-size: 75%;
+        background-size: 75%;
+        background-position: right 9.2vw;
+      }
+      @include mob-max-767 {
+        -webkit-background-size: contain;
+        background-size: contain;
+        background-position: top center;
+      }
+    }
+
+    .slide-image3 {
+      background-image: url('/sites/default/files/box-packing-mob.png');
+      @include screen-min-1900 {
+        background-position: 30vw 5.5vw;
+      }
+      background-position: left center;
+      @include desktop-min-992 {
+        -webkit-background-size: 70%;
+        background-size: 70%;
+        background-position: 30vw 65px;
+      }
+      @include tab-768-991 {
+        -webkit-background-size: 75%;
+        background-size: 75%;
+        background-position: 30vw 75px;
+      }
+      @include mob-max-767 {
+        -webkit-background-size: contain;
+        background-size: contain;
+        background-position: top center;
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+/* Font Families*/
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Hind:400,500,600&amp;subset=devanagari");
+
+/* Default variables.*/
+@import "default-variables";
+
+/* Bootstrap Framework.*/
+@import "../bootstrap/assets/stylesheets/bootstrap";
+
+/* Base-theme overrides.*/
+@import "overrides";
+
+/*Theme Variables*/
+@import "partials/variables";
+
+/* Theme mixins*/
+@import "partials/mixins";
+
+// common part
+@import "partials/common";
+
+// header
+@import "partials/header";
+
+// header
+@import "partials/slider";
+
+// products grid
+@import "partials/products";
+
+// footer
+@import "partials/footer";
+
+// composting recipe common
+@import "partials/composting_recipe_common";
+
+// composting main recipe
+@import "partials/composting_main_recipe";
+
+// About Us page
+@import "partials/about-us";
+/*============= All custom code from this line onwards =============*/

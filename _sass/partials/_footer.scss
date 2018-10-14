@@ -1,0 +1,72 @@
+.footer {
+  border-top: 5px solid $base-gray;
+}
+
+.footer-wrapper {
+  @include mob-max-767 {
+    .sm-mb {
+      margin-bottom: 50px;
+      .col-xs-3 {
+        padding-left: 0;
+        .fb-link, .ig-link {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  .highlight {
+    font-weight: bold;
+    font-family: $strong-font;
+  }
+  .contact {
+    padding-top: 7px;
+    text-align: center;
+    font-size: 14px;
+    @include mob-max-767 {
+      text-align: left;
+    }
+  }
+  .footercol3 {
+    .fb-link, .ig-link {
+      display: block;
+      text-align: center;
+      font-size: 46px;
+      margin: auto;
+      max-width: 40px;
+      a {
+        @include transitions;
+        color: #404041;
+        line-height: 0.9;
+      }
+    }
+    &:hover {
+      a {
+        @include transitions;
+      }
+    }
+    .fb-link:hover {
+      a {
+        color: #3b5998;
+      }
+    }
+    .ig-link {
+      a {
+        -webkit-border-radius: 15px;
+        border-radius: 15px;
+      }
+    }
+    .ig-link:hover {
+      a {
+        color: #ffffff;
+        background: #d6249f;
+        background: -webkit-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        background: -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+        box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.25);
+        -webkit-border-radius: 13px;
+        border-radius: 13px;
+      }
+    }
+  }
+}

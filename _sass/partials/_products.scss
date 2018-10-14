@@ -1,0 +1,87 @@
+.page-node-1 {
+  .main-container {
+    padding-top: 50px;
+    border-top: 5px solid $base-gray;
+  }
+}
+
+.view-ingredients {
+  .views-row {
+    margin-bottom: 30px;
+    @include mob-max-767 {
+      .prod-sf-mb {
+        margin-bottom: 60px;
+        padding: 0;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    margin: auto;
+  }
+  .ingt-title {
+    font-weight: bold;
+    margin: 12px auto 0px;
+    line-height: 1;
+  }
+  .views-field-field-subtitle {
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-family: $strong-font;
+  }
+  .views-field-field-ingredient-description {
+    margin-bottom: 15px;
+    .ingt-desc {
+      min-height: 40px;
+      .ingt-grid-title {
+        font-weight: bold;
+        line-height: 1.3;
+        font-size: 40px;
+        font-family: $strong-font;
+        @include desktop-992-1199 {
+          font-size: 38px;
+        }
+        @include tab-768-991 {
+          font-size: 36px;
+        }
+        @include mob-max-767 {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+  .views-field-field-url {
+    .ktc-ext-link {
+      display: block;
+      font-size: 20px;
+      border: 2px solid $special;
+      @include tab-768-991 {
+        font-size: 16px;
+        width: 100%;
+      }
+    }
+    i {
+      font-size: 24px;
+      position: relative;
+      top: 2px;
+      @include tab-768-991 {
+        font-size: 20px;
+      }
+    }
+  }
+  .row-1 {
+    .col-1 {
+      .views-field.views-field-title-1,
+      .views-field.views-field-field-url {
+        display: none;
+      }
+    }
+  }
+  .highlight-text {
+    font-style: italic;
+    color: $other-highlights;
+  }
+}
